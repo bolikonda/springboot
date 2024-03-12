@@ -1,10 +1,12 @@
 package com.example.demo;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-@Primary
+//@Primary
+//@Qualifier("quick")
 public class QuickSortImpl implements SortInterface{
 
 	public int[] sort(int[] numbers)
